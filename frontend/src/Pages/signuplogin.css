@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  /* Sign-up container */
+  .loginsignup-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Heading */
+  .loginsignup-container h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Input Fields */
+  .loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .loginsignup-fields input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .loginsignup-fields input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Signup Login Text */
+  .loginsignup-login {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .loginsignup-login a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .loginsignup-login a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    .loginsignup-container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    .loginsignup-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .loginsignup-fields input {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .loginsignup-login {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loginsignup-container {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .loginsignup-container h1 {
+      font-size: 1.3rem;
+    }
+  
+    .submit-btn {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .loginsignup-fields input {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .loginsignup-login {
+      font-size: 0.75rem;
+    }
+  }
+  

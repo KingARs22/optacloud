@@ -1,0 +1,138 @@
+/* Maps.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.location-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+.location-button-cancel {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+.location-button-cancel:hover{
+  background-color: darkred;
+}
+.location-button:hover {
+  background-color: #45a049;
+}
+
+.search-box-container {
+  position: relative;
+  margin: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  width: 80%;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure modal is on top of other elements */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  z-index: 1000; /* Higher z-index than the map */
+}
+
+/* Modal buttons */
+.modal-button, .modal-close-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal-close-button {
+  background-color: #f44336;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.map-container {
+  z-index: 1; /* Lower z-index for the map */
+}
+
+.save-address-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.save-address-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.save-address-modal-content h2{ margin-bottom: 10px; }
+
+.save-address-modal-content input { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+.modal-buttons { display: flex; justify-content: space-between; }
+
+.modal-buttons button { padding: 10px 20px; border: none; background-color: #007bff; color: white; border-radius: 5px; cursor: pointer; }
+
+.modal-buttons button:hover { background-color: #0056b3; }
